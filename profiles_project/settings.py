@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# Holds all apps installed in this Django project
+# Have added the newly created app 'profiles_api' here, along with the rest_framework and rest_framework.authtoken apps
 
 INSTALLED_APPS = [
     'django.contrib.admin',
