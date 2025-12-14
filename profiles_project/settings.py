@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-# Holds all apps installed in this Django project
-# Have added the newly created app 'profiles_api' here, along with the rest_framework and rest_framework.authtoken apps
+# HS: Holds all apps installed in this Django project
+# HS: Have added the newly created app 'profiles_api' here, along with the rest_framework and rest_framework.authtoken apps
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -123,3 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# HS: Added the custom user model to the django Project settings
+# HS: We created this UserProfile model in the profiles_api app inside models.py file
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
